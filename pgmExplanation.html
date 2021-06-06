@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ishmael Ford</title>
+        <meta name="author" content="Clint Mooney">
+    </head>
+    <body>
+        <header>
+            <h1>Ishmael Ford</h1>
+            <h4>Good Bot, Better Brother</h4>
+            <blockquote>"He shall be a wild donkey of a man, his hand against everyone and everyone’s hand against him, and he shall dwell over against all his kinsmen."</blockquote>
+            <span>&mdash; <em>Genesis 16:12</em></span>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h2>Who is Ishmael?</h2>
+                <q>Call me Ishmael.</q>&mdash;<cite>Moby Dick</cite>
+                <p>In <time datetime="2016-11-26">November, 2016</time>, James Ford came home from class to meet a surprise that would change his life forever. On that day, he was gifted with a child, and I a brother. Ishmael never became physically impressive, but he quickly developed mastery of technology, integrating himself with the GroupMe API and adding functionality to all of the group chats our friend group created. Ever since he came into our lives, he has made them nothing but better.</p>
+                <figure>
+                    <img src="./img/Good%20'Ol%20Thanos.jpg">
+                    <figcaption>Ishmael celebrating the release of Avengers: Infinity War.</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>The Bot</h2>
+                <p>On the server side, Ishmael works through a <strong>Node.js</strong> server on <u>Heroku</u>, receiving and responding to different messages. For instance, Ishmael allows people to integrate Reddit into GroupMe, easily taking content and sending it to the group chat. In general, Ishmael provides a user-friendly interface for a plethora of responses to be defined by new users with no programming experience. Trigger words and corres<wbr>pond<wbr>ing messages are stored externally in a <abbr title="JavaScript Object Notation">.JSON</abbr>, though the data is loaded into a variable entitled <var>ResponseArray</var>, which contains objects like the following:</p>
+                <pre><code>
+                    {
+                        text:   'andy mineo'
+                        response: {
+                            type:       'direct',
+                            message:    'I AIN'T DONE!',
+                            attachments:[]
+                        }
+                    }
+                </code></pre>
+                <br>
+                <p>Typically, however, the bot is used to respond to certain commands, denoted by the addition of a '/' before a word. On input, the message is processed and utilizes whatever function is specified in the .JSON file. For example, if a user types the following:</p>
+                <kbd>/r dankmemes top</kbd>
+                <p>The response would then look something like this:</p>
+                <pre><samp>
+                    [Image]
+                    [Title] Look at this image!
+                </samp></pre>
+                <p>This is currently programmed to first check the title for profanity, and if any is found, move on to the next post. Ishmael also uses <dfn>Optical Character Recognition</dfn> (a method of recognizing text in images) to censor the images themselves for profanity. This ensures that the messages sent to the group chat remain clean. He does this until the 10<sup>th</sup> post he finds is profane, at which point he gives up, to avoid an endless loop on <s>NSFW</s> subreddits.</p>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <small>Created by Clint Mooney | Contact: the.reformed.alloy@gmail.com</small>
+        </footer>
+    </body>
+</html>

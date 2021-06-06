@@ -1,0 +1,17 @@
+[X] At least one heading
+[X] Fragment of code
+[X] Variable reference
+[X] Quote from a book
+[X] Acronym
+[X] Ten different types of phrasing elements
+    * span
+    * em
+    * strong
+    * br
+    * time
+    * small
+    * wbr
+    * q
+    * s
+    * dfn
+    * sup
